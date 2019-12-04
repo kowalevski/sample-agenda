@@ -1,0 +1,22 @@
+{
+  "name": "sample-agenda-react-tdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkl0g/sample-agenda-react-tdd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkl0g/sample-agenda-react-tdd/issues"
+  },
+  "homepage": "https://github.com/mkl0g/sample-agenda-react-tdd#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
