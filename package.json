@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/mkl0g/sample-agenda-react-tdd#readme",
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
     "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.7.4"
   }
 }
