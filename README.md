@@ -1,3 +1,3 @@
-# sample-agenda-react-tdd
+# Sample Agenda React TDD
 
 
