@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint --debug ./",
-    "lint:write": "eslint --debug ./ --fix"
+    "lint:write": "eslint ./ --fix"
   },
   "husky": {
     "hooks": {
