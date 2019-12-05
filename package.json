@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint --debug ./",
-    "lint:write": "eslint ./ --fix"
+    "lint": "eslint --debug src",
+    "lint:write": "eslint --fix"
   },
   "husky": {
     "hooks": {
@@ -15,7 +15,7 @@
   },
   "lint-staged": {
     "*.(js|jsx)": [
-      "npm run lint:write",
+      "eslint --fix",
       "git add"
     ]
   },
@@ -49,6 +49,8 @@
     "prettier": "1.19.1"
   },
   "dependencies": {
-    "@babel/runtime": "^7.7.4"
+    "@babel/runtime": "^7.7.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   }
 }
