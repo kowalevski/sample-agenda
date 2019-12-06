@@ -3,21 +3,29 @@ import ReactDOM from "react-dom";
 import { Meeting } from "../src/Meeting";
 
 describe("Meeting", () => {
+  let container;
+  let team;
+
+  beforeEach(() => {
+    container = document.createElement("div");
+  });
+
+  const render = component => ReactDOM.render(component, container);
+
   it("renders the team name", () => {
-    const team = { name: "Team A" };
-    const container = document.createElement("div");
+    team = { name: "Team A" };
 
     // basically just a simple emulation of Enzyme's work here
-    ReactDOM.render(<Meeting team={team} />, container);
+    render(<Meeting team={team} />);
 
     expect(container.textContent).toMatch("Team A");
   });
   // triangulation
   it("renders another team name", () => {
-    const team = { name: "Team B" };
-    const container = document.createElement("div");
+    team = { name: "Team B" };
+    container = document.createElement("div");
 
-    ReactDOM.render(<Meeting team={team} />, container);
+    render(<Meeting team={team} />);
 
     expect(container.textContent).toMatch("Team B");
   });
