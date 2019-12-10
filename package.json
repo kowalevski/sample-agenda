@@ -7,7 +7,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "eslint --debug src",
-    "lint:write": "eslint --fix"
+    "lint:write": "eslint --fix",
+    "build": "webpack"
   },
   "husky": {
     "hooks": {
@@ -35,6 +36,7 @@
     "@babel/preset-env": "^7.7.4",
     "@babel/preset-react": "^7.7.4",
     "@types/jest": "^24.0.23",
+    "babel-loader": "^8.0.6",
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.7.0",
@@ -47,7 +49,9 @@
     "husky": "^3.1.0",
     "jest": "^24.9.0",
     "lint-staged": "^9.5.0",
-    "prettier": "1.19.1"
+    "prettier": "1.19.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   },
   "dependencies": {
     "@babel/runtime": "^7.7.4",
