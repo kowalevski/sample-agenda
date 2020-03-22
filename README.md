@@ -1,4 +1,4 @@
-# Sample Agenda React TDD
+# Sample Agenda
 
 > That's just a simple app for demonstration of work in TDD in React.
 
